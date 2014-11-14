@@ -7,6 +7,9 @@ import java.util.regex.Pattern;
 public class Test2 {
 	public static void main(String[] args) {
 		String [] to={"daxue513@126.com","1078429355@qq.com","21321.sad@qq"};
+		for(String tmp:to){
+			
+		}
 	}
 	
 	private static boolean isEmail(String email){
