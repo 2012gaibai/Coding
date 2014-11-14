@@ -1,15 +1,22 @@
 package code;
 
-import java.util.HashMap;
-import java.util.Map;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Test2 {
 	public static void main(String[] args) {
-		Map<String, String> map = new HashMap<String, String>();
+		String [] to={"daxue513@126.com","1078429355@qq.com","21321.sad@qq"};
+	}
+	
+	private static boolean isEmail(String email){
+		if("".equals(email)||email==null){
+			return false;
+		}
 		
-		map.put("haha", "1213");
-		map.put("haha", "5443");
-		System.out.println(map.get("haha"));
+		Pattern p=Pattern.compile("\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*");
+		Matcher m=p.matcher(email);
 		
+		return m.matches();
 	}
 }
