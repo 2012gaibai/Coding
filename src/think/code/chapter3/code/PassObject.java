@@ -1,4 +1,4 @@
-package think.code.chapter3.train;
+package think.code.chapter3.code;
 
 class Letter {
 	char c;
